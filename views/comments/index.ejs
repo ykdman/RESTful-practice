@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commnets Index</title>
+</head>
+<body>
+    <h1>Comments</h1>
+    <form action="/comments/new">
+        <Button a="/comments/new">Create Comment</Button>
+    </form>
+    <br>
+
+    <div>
+        <ul>
+            <%for (let comment of comments) {%>
+                <li><%= comment.comment %> - <b><%= comment.username %></b></li>
+            <%}%>
+        </ul>
+    </div>
+    
+
+</body>
+</html>
