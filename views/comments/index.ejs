@@ -15,7 +15,9 @@
     <div>
         <ul>
             <%for (let comment of comments) {%>
-                <li><%= comment.comment %> - <b><%= comment.username %></b></li>
+                <li><%= comment.comment %> - <b><%= comment.username %></b>
+                    <a href="/comments/<%= comment.id %>">Details</a>
+                </li>
             <%}%>
         </ul>
     </div>
